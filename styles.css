@@ -2,7 +2,7 @@
   color-scheme: light;
   background: #fffcf5;
   color: #2d3748;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Inter var", system-ui, Roboto, Arial, sans-serif;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  max-width: 640px;
+  max-width: 860px;
   margin: 0 auto;
   padding-bottom: 3rem;
 }
@@ -42,9 +42,24 @@ hr {
   margin: 2rem 0;
 }
 
-@media (max-width: 480px) {
-  body {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
+.post-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 1rem;
+}
+
+time {
+  color: #606975;
+  font-size: 0.8em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+pre {
+  overflow-x: auto;
+  font-size: 0.75em;
 }

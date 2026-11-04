@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,7 +25,11 @@
       <hr>
       <section aria-labelledby="writing-title">
         <h2 id="writing-title">Recent</h2>
+        {% for post in site.posts %}
+        <p class="post-row"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></p>
+        {% else %}
         <p>I’m gathering thoughts on software, the open web, and the craft of building. Check back soon.</p>
+        {% endfor %}
       </section>
     </main>
   </body>
