@@ -1,4 +1,9 @@
-# Rob Pike’s Lexical Scanning in Go, Revisited
+---
+layout: post
+title: "Rob Pike’s Lexical Scanning in Go, Revisited"
+date: 2026-11-05
+render_with_liquid: false
+---
 
 Rob Pike's 2011 talk, [Lexical Scanning in Go](https://go.dev/talks/2011/lex.slide), is a very instructive example of the general theme of [Concurrency is not parallelism](https://www.youtube.com/watch?v=oV9rvDllKEg). It's one of my favorite talks on Go, but I find it a bit hard to follow. Its main idea, a lexer built from functions that return their successors, gets tangled up with a second idea: using a channel to coordinate the lexer and the parser.
 
