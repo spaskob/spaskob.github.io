@@ -59,7 +59,55 @@ img {
   height: auto;
 }
 
+pre, code {
+  font-family: ui-monospace, "SF Mono", "Go Mono", Menlo, Consolas, monospace;
+}
+
+code {
+  font-size: 0.85em;
+  background-color: #f1ece1;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+}
+
 pre {
   overflow-x: auto;
   font-size: 0.75em;
+  line-height: 1.5;
 }
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  border-radius: 0;
+}
+
+div.highlighter-rouge {
+  background-color: #f6f3eb;
+  border: 1px solid #e4dfd3;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
+div.highlighter-rouge pre.highlight {
+  padding: 1rem 1.25rem;
+  margin: 0;
+}
+
+/* Syntax Highlighting (Rouge / GitHub Light style) */
+.highlight, .highlight .w { color: #24292f; }
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .kv { color: #cf222e; } /* keywords */
+.highlight .kc { color: #0550ae; } /* constant keywords (true, false, nil) */
+.highlight .s, .highlight .sa, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .sx, .highlight .s1, .highlight .ss { color: #0a3069; } /* strings */
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cp, .highlight .cpf, .highlight .c1, .highlight .cs { color: #6e7781; font-style: italic; } /* comments */
+.highlight .nf, .highlight .fm { color: #8250df; } /* functions */
+.highlight .l, .highlight .ld, .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx { color: #0550ae; } /* numbers */
+.highlight .nb, .highlight .nc { color: #953800; } /* builtins & type declarations */
+.highlight .o, .highlight .ow { color: #0550ae; } /* operators */
+.highlight .na, .highlight .nt, .highlight .sr { color: #116329; }
+.highlight .gi { color: #116329; background-color: #dafbe1; }
+.highlight .gd { color: #82071e; background-color: #ffebe9; }
+.highlight .ge { font-style: italic; }
+.highlight .gs { font-weight: bold; }
+
