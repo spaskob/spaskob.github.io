@@ -1,0 +1,6 @@
+title: Spas Bojanov
+url: "https://spaskob.github.io"
+description: "Notes on software, the web, and the things I learn while building."
+
+plugins:
+  - jekyll-feed

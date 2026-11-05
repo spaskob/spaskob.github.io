@@ -9,10 +9,14 @@
     <meta name="description" content="Notes on software, the web, and the things I learn while building.">
     <title>Spas Bojanov</title>
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    {% feed_meta %}
   </head>
   <body>
     <main>
-      <h1>Spas Bojanov</h1>
+      <div class="header-row">
+        <h1>Spas Bojanov</h1>
+        <a class="rss-link" href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS</a>
+      </div>
       <p>
         I’m a developer who likes thoughtful software, the details that make it feel
         good, and sharing what I learn along the way.

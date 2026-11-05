@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#fffcf5">
     <title>{{ page.title | escape }} — Spas Bojanov</title>
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    {% feed_meta %}
   </head>
   <body>
     <main>

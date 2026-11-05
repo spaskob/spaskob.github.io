@@ -44,11 +44,17 @@ hr {
   margin: 2rem 0;
 }
 
+.header-row,
 .post-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: baseline;
   gap: 0 1rem;
+}
+
+.rss-link {
+  font-size: 0.8em;
 }
 
 time {
