@@ -2,13 +2,13 @@
 layout: post
 title: "Rob Pike’s Lexical Scanning in Go, Revisited"
 date: 2026-11-05
-render_with_liquid: false
 ---
 
 Rob Pike's 2011 talk, [Lexical Scanning in Go](https://go.dev/talks/2011/lex.slide), is a very instructive example of the general theme of [Concurrency is not parallelism](https://www.youtube.com/watch?v=oV9rvDllKEg). It's one of my favorite talks on Go, but I find it a bit hard to follow. Its main idea, a lexer built from functions that return their successors, gets tangled up with a second idea: using a channel to coordinate the lexer and the parser.
 
 This post separates the two. We'll build up to Pike's design starting from a plain lexing loop.
 
+{% raw %}
 ## A Tiny Template Language
 
 Let's simplify Pike's original problem. Suppose we're building a template language that allows ordinary text to contain expressions enclosed in double curly braces:
@@ -618,3 +618,4 @@ Just as notable is what Pike *didn't* remove. The `stateFn` type, the functions 
 - [Florian Weimer — An Observation About Tail Calls (2011)](https://www.enyo.de/fw/notes/tail-calls.html)
 - [Eli Bendersky — On Recursion, Continuations and Trampolines (2017)](https://eli.thegreenplace.net/2017/on-recursion-continuations-and-trampolines/)
 - [Eli Bendersky — Performance of Coroutine-Style Lexers in Go (2022)](https://eli.thegreenplace.net/2022/performance-of-coroutine-style-lexers-in-go/)
+{% endraw %}
