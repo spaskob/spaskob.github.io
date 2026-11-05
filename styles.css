@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap');
+
 :root {
   color-scheme: light;
   background: #fffcf5;
   color: #2d3748;
-  font-family: "Inter var", system-ui, Roboto, Arial, sans-serif;
+  font-family: 'Minion 3', 'Minion Pro', 'Source Serif 4', Georgia, Cambria, 'Times New Roman', serif;
 }
 
 * {
@@ -60,7 +62,7 @@ img {
 }
 
 pre, code {
-  font-family: ui-monospace, "SF Mono", "Go Mono", Menlo, Consolas, monospace;
+  font-family: 'Source Code Pro', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 }
 
 code {
